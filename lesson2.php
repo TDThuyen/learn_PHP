@@ -20,24 +20,26 @@ $n = null;
 <?php
 # Operators
 # Arithmetic operator
-echo ($x + 10);
+echo ($x + 10) . "<br>";
 
 # Assignment operator
 $x = $x + $y;
-echo $x;
+echo $x . "<br>";
 
 # Comparison operator
-echo ($x === $t);
+echo ($x === $y);
 
 # Increasement, decreasement operator
 $x++;
-echo $x;
+echo $x . "<br>";
 
 # Logical operator
-echo ($x and $y);
+echo ($x and $y) . "<br>";
 
 # String operator
-echo $txt1 . $txt2;
+$txt1 = "Hello ";
+$txt2 = "world!";
+echo $txt1 . $txt2 . "<br>";
 
 # Array operator
 $a = ['name' => 'An', 'age' => 20];
@@ -96,8 +98,8 @@ while ($x < 11) {
 $x = 1;
 do {
     echo $x . "\n";
-    $i++;
-} while ($i < 11);
+    $x++;
+} while ($x < 11);
 
 # for loop
 for ($i = 1; $i < 11; $i++) {
@@ -105,6 +107,7 @@ for ($i = 1; $i < 11; $i++) {
 }
 
 # foreach loop
+$colors = ["red", "green", "blue"];
 foreach ($colors as $name) {
     echo $name . "\n";
 }
@@ -118,7 +121,7 @@ echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
 
 # Associative Array
 $age = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
-echo "Peter is " . $age['Peter'] . " years old.";
+echo "Peter is " . $age['Peter'] . " years old." . "<br>";
 
 # Multidimension array
 $matrix = [[1, 2, 3], [4, 5, 6]];
@@ -126,6 +129,6 @@ foreach ($matrix as $i) {
     foreach ($i as $j) {
         echo $j . " ";
     }
-    echo "\n";
+    echo "<br>";
 }
 ?>
